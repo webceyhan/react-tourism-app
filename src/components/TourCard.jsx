@@ -24,24 +24,14 @@ const theme = createTheme({
     },
 });
 
-const mock = {
-    id: 1,
-    name: 'Immerse into the Falls',
-    duration: 5,
-    rating: 4.5,
-    numberOfReviews: 462,
-    price: 465,
-    image: 'https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg',
-};
-
-export const TourCard = () => {
+export const TourCard = ({ tour }) => {
     return (
         <Grid item xs={12} md={3}>
             <ThemeProvider theme={theme}>
                 <Paper elevation={3}>
-                    <img src={mock.image} alt="poster" className="img" />
+                    <img src={tour.image} alt="poster" className="img" />
                     <Box px={1}>
-                        <Typography variant="subtitle1">{mock.name}</Typography>
+                        <Typography variant="subtitle1">{tour.name}</Typography>
                         <Box
                             sx={{
                                 display: 'flex',
@@ -50,7 +40,7 @@ export const TourCard = () => {
                         >
                             <AccessTime sx={{ width: 14 }} />
                             <Typography variant="body2" ml={0.5}>
-                                {mock.duration} hours
+                                {tour.duration} hours
                             </Typography>
                         </Box>
                         <Box
@@ -62,21 +52,21 @@ export const TourCard = () => {
                         >
                             <Rating
                                 name="read-only"
-                                value={mock.rating}
+                                value={tour.rating}
                                 precision={0.5}
                                 size="small"
                                 readOnly
                             />
                             <Typography variant="body2" ml={0.5}>
-                                {mock.rating}
+                                {tour.rating}
                             </Typography>
                             <Typography variant="body3" ml={1.5}>
-                                ({mock.numberOfReviews} reviews)
+                                ({tour.numberOfReviews} reviews)
                             </Typography>
                         </Box>
                         <Box>
                             <Typography variant="h6" mt={0}>
-                                From ${mock.price}
+                                From ${tour.price}
                             </Typography>
                         </Box>
                     </Box>
