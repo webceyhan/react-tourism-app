@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { SearchAppBar } from './components/AppBar';
 import { Home } from './pages/Home';
 import { Tour } from './pages/Tour';
-import './App.css';
 
 const theme = createTheme({
     components: {

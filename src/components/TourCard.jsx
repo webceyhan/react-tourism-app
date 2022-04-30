@@ -8,10 +8,27 @@ import { AccessTime } from '@mui/icons-material';
 export const TourCard = ({ tour }) => {
     return (
         <Grid item xs={12} sm={6} md={4} lg={3}>
-            <Paper elevation={3}>
-                <img src={tour.image} alt="poster" className="img" />
-                <Box px={1}>
+            <Paper
+                elevation={3}
+                sx={{
+                    overflow: 'hidden',
+                    '&:hover': {                        
+                        boxShadow: '0px 3px 10px rgba(0, 0, 0, 0.5)',
+                    },
+                }}
+            >
+                {/* tour image */}
+                <img
+                    src={tour.image}
+                    alt="poster"
+                    style={{ width: '100%', height: '7rem' }}
+                />
+
+                <Box p={1}>
+                    {/* tour name */}
                     <Typography variant="subtitle1">{tour.name}</Typography>
+
+                    {/* tour duration */}
                     <Box
                         sx={{
                             display: 'flex',
@@ -23,11 +40,13 @@ export const TourCard = ({ tour }) => {
                             {tour.duration} hours
                         </Typography>
                     </Box>
+
+                    {/* tour rating */}
                     <Box
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
-                            mt: 3,
+                            mt: 1,
                         }}
                     >
                         <Rating
@@ -44,8 +63,10 @@ export const TourCard = ({ tour }) => {
                             ({tour.numberOfReviews} reviews)
                         </Typography>
                     </Box>
+
+                    {/* tour price */}
                     <Box>
-                        <Typography variant="h6" mt={0}>
+                        <Typography variant="h6" mt={1}>
                             From ${tour.price}
                         </Typography>
                     </Box>
