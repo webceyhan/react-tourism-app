@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import { DatePicker } from './DatePicker';
 
 const style = {
     position: 'absolute',
@@ -22,10 +22,12 @@ export const BasicModal = () => {
     const handleClose = () => setOpen(false);
 
     return (
-        <Box sx={{
-            display: 'flex',
-            alignItems: 'center',
-        }}>
+        <Box
+            sx={{
+                display: 'flex',
+                alignItems: 'center',
+            }}
+        >
             <Button onClick={handleOpen}>Book Now</Button>
             <Modal
                 open={open}
@@ -34,17 +36,7 @@ export const BasicModal = () => {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                    <Typography
-                        id="modal-modal-title"
-                        variant="h6"
-                        component="h2"
-                    >
-                        Text in a modal
-                    </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor
-                        ligula.
-                    </Typography>
+                    <DatePicker />
                 </Box>
             </Modal>
         </Box>
