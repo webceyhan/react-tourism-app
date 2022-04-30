@@ -14,7 +14,7 @@ const mock = {
 
 export const TourCard = () => {
     return (
-        <Grid item xs={3}>
+        <Grid item xs={12} md={3}>
             <Paper elevation={3}>
                 <img src={mock.image} alt="poster" className='img' />
                 <Typography variant="subtitle1">
