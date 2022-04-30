@@ -54,6 +54,11 @@ export const TourCard = () => {
                             ({mock.numberOfReviews} reviews)
                         </Typography>
                     </Box>
+                    <Box>
+                        <Typography variant="h6" mt={0}>
+                            From ${mock.price}
+                        </Typography>
+                    </Box>
                 </Box>
             </Paper>
         </Grid>
