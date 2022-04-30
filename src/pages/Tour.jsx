@@ -1,7 +1,8 @@
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import { ImageCollage } from '../components/ImageCollage';
+import { TourFAQ } from '../components/TourFAQ';
 
 export const Tour = () => {
     return (
@@ -9,6 +10,7 @@ export const Tour = () => {
             <Typography variant="h4" mb={3}>
                 Explore the world in Vegas
             </Typography>
+
             <Box
                 mb={3}
                 sx={{
@@ -21,7 +23,8 @@ export const Tour = () => {
                 />
                 <ImageCollage />
             </Box>
-            <Box>
+
+            <Box mb={3}>
                 <Typography variant="h6" mb={2}>
                     About this ticket
                 </Typography>
@@ -35,6 +38,13 @@ export const Tour = () => {
                     consequuntur repellat a perspiciatis dignissimos excepturi
                     sequi iure quia!
                 </Typography>
+            </Box>
+
+            <Box mb={3}>
+                <Typography variant="h6" mb={2}>
+                    Frequently Asked Questions
+                </Typography>
+                <TourFAQ />
             </Box>
         </Container>
     );
