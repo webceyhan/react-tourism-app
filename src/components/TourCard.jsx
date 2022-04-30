@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { AccessTime } from '@mui/icons-material';
 
 const mock = {
     id: 1,
@@ -26,7 +27,8 @@ export const TourCard = () => {
                             alignItems: 'center',
                         }}
                     >
-                        <Typography variant="body2">
+                        <AccessTime sx={{ width: 14 }} />
+                        <Typography variant="body2" ml={0.5}>
                             {mock.duration} days
                         </Typography>
                     </Box>
