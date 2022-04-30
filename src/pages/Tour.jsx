@@ -1,8 +1,11 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import BottomNavigation from '@mui/material/BottomNavigation';
 import { ImageCollage } from '../components/ImageCollage';
 import { TourFAQ } from '../components/TourFAQ';
+import { BasicModal } from '../components/BasicModal';
 
 export const Tour = () => {
     return (
@@ -46,6 +49,18 @@ export const Tour = () => {
                 </Typography>
                 <TourFAQ />
             </Box>
+
+            <br />
+            <br />
+
+            <Paper
+                sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
+                elevation={3}
+            >
+                <BottomNavigation showLabels>
+                    <BasicModal />
+                </BottomNavigation>
+            </Paper>
         </Container>
     );
 };
