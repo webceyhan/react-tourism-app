@@ -26,7 +26,7 @@ const theme = createTheme({
 
 export const TourCard = ({ tour }) => {
     return (
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
             <ThemeProvider theme={theme}>
                 <Paper elevation={3}>
                     <img src={tour.image} alt="poster" className="img" />
