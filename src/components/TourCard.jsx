@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
 import { AccessTime } from '@mui/icons-material';
 
 const mock = {
@@ -31,6 +32,21 @@ export const TourCard = () => {
                         <Typography variant="body2" ml={0.5}>
                             {mock.duration} hours
                         </Typography>
+                    </Box>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            mt: 3,
+                        }}
+                    >
+                        <Rating
+                            name="read-only"
+                            value={mock.rating}
+                            precision={0.5}
+                            size="small"
+                            readOnly
+                        />
                     </Box>
                 </Box>
             </Paper>
