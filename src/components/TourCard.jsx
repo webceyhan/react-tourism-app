@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 const mock = {
     id: 1,
@@ -16,10 +17,20 @@ export const TourCard = () => {
     return (
         <Grid item xs={12} md={3}>
             <Paper elevation={3}>
-                <img src={mock.image} alt="poster" className='img' />
-                <Typography variant="subtitle1">
-                    {mock.name}
-                </Typography>
+                <img src={mock.image} alt="poster" className="img" />
+                <Box px={1}>
+                    <Typography variant="subtitle1">{mock.name}</Typography>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <Typography variant="body2">
+                            {mock.duration} days
+                        </Typography>
+                    </Box>
+                </Box>
             </Paper>
         </Grid>
     );
