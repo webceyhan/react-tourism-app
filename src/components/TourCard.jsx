@@ -29,7 +29,7 @@ export const TourCard = () => {
                     >
                         <AccessTime sx={{ width: 14 }} />
                         <Typography variant="body2" ml={0.5}>
-                            {mock.duration} days
+                            {mock.duration} hours
                         </Typography>
                     </Box>
                 </Box>
