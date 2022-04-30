@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
@@ -10,25 +11,26 @@ import { BasicModal } from '../components/BasicModal';
 export const Tour = () => {
     return (
         <Container sx={{ marginY: 5 }}>
-            <Typography variant="h4" mb={3}>
+            <Typography variant="h4" mb={2}>
                 Explore the world in Vegas
             </Typography>
 
-            <Box
-                mb={3}
-                sx={{
-                    display: 'flex',
-                }}
-            >
-                <img
-                    src="https://media.timeout.com/images/105124791/750/422/image.jpg"
-                    height={325}
-                />
-                <ImageCollage />
-            </Box>
+            <Grid container spacing={1} mb={2}>
+                <Grid item xs={12} md={8}>
+                    <img
+                        src="https://media.timeout.com/images/105124791/750/422/image.jpg"
+                        style={{ width: '100%', objectFit: 'cover' }}
+                        height={325}
+                        alt="Vegas"
+                    />
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <ImageCollage />
+                </Grid>
+            </Grid>
 
             <Box mb={3}>
-                <Typography variant="h6" mb={2}>
+                <Typography variant="h6" mb={1}>
                     About this ticket
                 </Typography>
                 <Typography variant="paragraph" mb={2}>
@@ -44,7 +46,7 @@ export const Tour = () => {
             </Box>
 
             <Box mb={3}>
-                <Typography variant="h6" mb={2}>
+                <Typography variant="h6" mb={1}>
                     Frequently Asked Questions
                 </Typography>
                 <TourFAQ />

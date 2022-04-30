@@ -75,7 +75,7 @@ const itemData = [
 export const ImageCollage = () => {
     return (
         <ImageList
-            sx={{ width: 300, height: 325, ml:1 }}
+            sx={{ width: '100%', height: 325 }}
             variant="quilted"
             cols={4}
             rowHeight={121}
