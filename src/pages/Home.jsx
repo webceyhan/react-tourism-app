@@ -11,7 +11,7 @@ export const Home = () => {
             <SearchAppBar />
             <Container sx={{ marginY: 5 }}>
                 {cities.map((city) => (
-                    <>
+                    <div key={city.id}>
                         <Typography variant="h4" mt={5} mb={3}>
                             Top {city.name} Tours
                         </Typography>
@@ -20,7 +20,7 @@ export const Home = () => {
                                 <TourCard tour={tour} key={index} />
                             ))}
                         </Grid>
-                    </>
+                    </div>
                 ))}
             </Container>
         </div>
