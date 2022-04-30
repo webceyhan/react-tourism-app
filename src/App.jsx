@@ -1,6 +1,7 @@
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { TourCard } from './components/TourCard';
+import './App.css';
 
 export const App = () => {
     return (
