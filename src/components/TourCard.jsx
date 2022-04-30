@@ -47,6 +47,12 @@ export const TourCard = () => {
                             size="small"
                             readOnly
                         />
+                        <Typography variant="body2" ml={0.5}>
+                            {mock.rating}
+                        </Typography>
+                        <Typography variant="body2" ml={1.5}>
+                            ({mock.numberOfReviews} reviews)
+                        </Typography>
                     </Box>
                 </Box>
             </Paper>
