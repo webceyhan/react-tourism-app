@@ -74,7 +74,7 @@ export const SearchAppBar = () => {
                             display: { xs: 'none', sm: 'block' },
                         }}
                     >
-                        MUI
+                        TourismApp
                     </Typography>
                     <Search>
                         <SearchIconWrapper>
