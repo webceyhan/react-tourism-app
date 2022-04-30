@@ -6,11 +6,11 @@ import { ImageCollage } from '../components/ImageCollage';
 export const Tour = () => {
     return (
         <Container sx={{ marginY: 5 }}>
-            <Typography variant="h4" mt={5} mb={3}>
+            <Typography variant="h4" mb={3}>
                 Explore the world in Vegas
             </Typography>
             <Box
-                mt={3}
+                mb={3}
                 sx={{
                     display: 'flex',
                 }}
@@ -20,6 +20,21 @@ export const Tour = () => {
                     height={325}
                 />
                 <ImageCollage />
+            </Box>
+            <Box>
+                <Typography variant="h6" mb={2}>
+                    About this ticket
+                </Typography>
+                <Typography variant="paragraph" mb={2}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa quae molestiae sed nostrum minima fugiat quaerat quas
+                    ex quasi aperiam? Amet consequuntur repellat a perspiciatis
+                    dignissimos excepturi sequi iure quia! Lorem ipsum dolor sit
+                    amet consectetur, adipisicing elit. Culpa quae molestiae sed
+                    nostrum minima fugiat quaerat quas ex quasi aperiam? Amet
+                    consequuntur repellat a perspiciatis dignissimos excepturi
+                    sequi iure quia!
+                </Typography>
             </Box>
         </Container>
     );
