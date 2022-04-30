@@ -6,7 +6,7 @@
 
 <!-- HEADER ///////////////////////////////////////////////////////////// -->
 
-# React Tourism App + Vite + React + Material UI
+# Tourism App + Vite + React + Material UI
 
 This is a non-functional Tourism application built on Vite using React + Material UI to demonstrate the basics of Material UI with React.
 
