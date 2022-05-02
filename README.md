@@ -2,7 +2,7 @@
 
 [![CodeQL](https://github.com/webceyhan/react-tourism-app/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/webceyhan/react-tourism-app/actions/workflows/codeql-analysis.yml)
 [![Build and Deploy](https://github.com/webceyhan/react-tourism-app/actions/workflows/netlify-deploy.yml/badge.svg)](https://github.com/webceyhan/react-tourism-app/actions/workflows/netlify-deploy.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e28e4e68-5bab-4837-9f4e-4550d48ef5b6/deploy-status)](https://app.netlify.com/sites/react-tourism-app-app/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e28e4e68-5bab-4837-9f4e-4550d48ef5b6/deploy-status)](https://app.netlify.com/sites/react-tourism-app/deploys)
 
 <!-- HEADER ///////////////////////////////////////////////////////////// -->
 
@@ -10,7 +10,7 @@
 
 This is a non-functional Tourism application built on Vite using React + Material UI to demonstrate the basics of Material UI with React.
 
-[View Demo](https://react-tourism-app-app.netlify.app/) |
+[View Demo](https://webceyhan-react-tourism-app.netlify.app/) |
 [Report Issue](https://github.com/webceyhan/react-tourism-app/issues) |
 [Request Feature](https://github.com/webceyhan/react-tourism-app/pulls) |
 [@webceyhan](https://twitter.com/webceyhan)
